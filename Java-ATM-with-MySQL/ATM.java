@@ -64,7 +64,7 @@ public class Atm {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/atm?useSSL=false&serverTimezone=UTC", "root", "suryawanshi777");
+                "jdbc:mysql://localhost:3306/atm?useSSL=false&serverTimezone=UTC", "username", "password");
 
             Statement stmt = con.createStatement();
             Scanner sc = new Scanner(System.in);
